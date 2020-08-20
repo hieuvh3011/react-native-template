@@ -9,11 +9,11 @@ export default MainNavigator = () => (
 );
 
 export function navigate(name, params) {
-  navigationRef.current?.navigate(name, params);
+  navigationRef?.current?.navigate(name, params);
 }
 
 export function resetNavigation(screenName, params, index = 0) {
-  navigationRef.current?.dispatch(
+  navigationRef?.current?.dispatch(
     CommonActions.reset({
       index: index,
       routes: [{ name: screenName, params }],
@@ -22,5 +22,5 @@ export function resetNavigation(screenName, params, index = 0) {
 }
 
 export function goBack() {
-  navigationRef.current?.goBack();
+  navigationRef?.current?.goBack();
 }

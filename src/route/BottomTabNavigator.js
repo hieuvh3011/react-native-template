@@ -7,7 +7,7 @@ const Tabs = createBottomTabNavigator();
 
 export default BottomTabNavigator = () => (
   <Tabs.Navigator>
-    <Tab.Screen name="Home" component={HomeScreen} />
-    <Tab.Screen name="Account" component={AccountScreen} />
+    <Tabs.Screen name="Home" component={HomeScreen} />
+    <Tabs.Screen name="Account" component={AccountScreen} />
   </Tabs.Navigator>
 )
