@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
+const texts = StyleSheet.create({
   lightTitle: {
     fontSize: 18,
     fontWeight: '700',
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default styles;
+export default texts;

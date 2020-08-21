@@ -6,6 +6,7 @@ import {
   Dimensions,
 } from 'react-native';
 import {textField} from '../../utils/TextStyles'; 
+import { Header } from '../common/Header/Header';
 
 
 const {width, height} = Dimensions.get('window'); 
@@ -13,7 +14,8 @@ const {width, height} = Dimensions.get('window');
 
 export default function HomeScreen(props) {
   return (
-    <View style={[styles.center, styles.container]}>
+    <View style={[styles.container]}>
+      <Header title={"ok men"}/>
       <Text style={textField}>HomeScreen</Text>
     </View>
   )

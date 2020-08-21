@@ -12,4 +12,5 @@ export default {
   profile: 'Hồ sơ',
   profileMessage:
     'And this one has a nav, but with a different color than the login.',
+  notification: "Thông báo",
 };
