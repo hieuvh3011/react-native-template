@@ -1,22 +1,32 @@
 import React, { useState } from 'react';
-import AsyncStorage from '@react-native-community/async-storage'
-import { useNavigation } from '@react-navigation/native'
+import AsyncStorage from '@react-native-community/async-storage';
+import { useNavigation } from '@react-navigation/native';
 import { BOTTOM_TAB_NAVIGATOR, LOGIN_SCREEN } from '../../route/RouteName';
+import { CommonActions } from '@react-navigation/native';
+
 export default splashViewModel = () => {
   const navigation = useNavigation();
   const _hasAccessToken = async () => {
-    const token = await AsyncStorage.getItem("access_token") || null;
+    const token = await AsyncStorage.getItem('access_token') || null;
     return token === null;
-  }
+  };
 
   const _goToNextPage = async () => {
     const hasToken = await _hasAccessToken();
     if (hasToken) {
-      navigation?.navigate(BOTTOM_TAB_NAVIGATOR);
+      _resetNavigation(BOTTOM_TAB_NAVIGATOR)
     } else {
-      navigation?.navigate(LOGIN_SCREEN);
+      _resetNavigation(LOGIN_SCREEN);
     }
-  }
+  };
 
-  return { _goToNextPage }
-}
+  const _resetNavigation = (routeName, index = 0) => {
+    navigation?.dispatch(
+      CommonActions?.reset({
+        index,
+        routes: [{name: routeName}],
+      }),
+    );
+  };
+  return {_goToNextPage};
+};

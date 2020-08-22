@@ -4,6 +4,7 @@ export default {
   emailHint: 'Nhập email',
   home: 'Trang chủ',
   homeMessage: 'Chào mừng',
+  account: 'Tài khoản',
   loading: 'Đang tải',
   login: 'Đăng nhập',
   logout: 'Đăng xuất',
@@ -13,4 +14,5 @@ export default {
   profileMessage:
     'And this one has a nav, but with a different color than the login.',
   notification: "Thông báo",
+  settings: "Cài đặt"
 };

@@ -5,10 +5,10 @@ import {
   StyleSheet,
   Dimensions,
 } from 'react-native';
-import {textField} from '../../utils/TextStyles'; 
+import { textField } from '../../utils/TextStyles';
 
 
-const {width, height} = Dimensions.get('window'); 
+const {width, height} = Dimensions.get('window');
 
 
 export default function LoginScreen(props) {
@@ -20,12 +20,12 @@ export default function LoginScreen(props) {
 }
 
 const styles = StyleSheet.create({
-  center:{
-    alignItems:'center',
-    justifyContent:'center'
+  center: {
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   container: {
     width,
     height,
   }
-}); 
+});

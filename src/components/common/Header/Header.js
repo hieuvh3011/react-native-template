@@ -18,7 +18,7 @@ const headerHeight = scaleVertical(50);
 
 export function Header(props) {
   const { title, back, noRightIcon } = props;
-  const { _goBack, _goToNotification } = headerViewModel();
+  const { _goBack, _goToNotification, _openDrawer } = headerViewModel(props);
 
   const _renderLeft = () => {
     if (back) {
@@ -29,7 +29,7 @@ export function Header(props) {
       )
     }
     return (
-      <TouchableOpacity style={styles.iconArea} onPress={_goBack}>
+      <TouchableOpacity style={styles.iconArea} onPress={_openDrawer}>
         <Icon name={'menu'} size={scaleModerate(25)} />
       </TouchableOpacity>
     )
