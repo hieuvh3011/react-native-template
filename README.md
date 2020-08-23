@@ -7,35 +7,27 @@ This template is inspire by [moove-it/react-native-template](https://github.com/
 
 ## Dependencies
 - [Axios](https://github.com/axios/axios): for networking.
+- [Prop-Types](https://github.com/facebook/prop-types): for checking type of your props.
 - Full dependencies of [React-Navigation](https://reactnavigation.org/docs/hello-react-navigation): use to manage navigation of app.
+- [Async-Storage](https://github.com/react-native-community/async-storage): use to store global data in your application.
 - [Redux-Toolkit](https://redux-toolkit.js.org/): a new, recommended version of [Redux](https://redux.js.org/introduction/getting-started), make redux is easier to use.
 - [React-Redux](https://github.com/reduxjs/react-redux): package to use Redux with React (and/or React Native).
-- [React-Native-Rename](https://github.com/junedomingo/react-native-rename): use to rename your project if you clone this template. 
 - [Redux-Thunk](https://github.com/reduxjs/redux-thunk): to dispatch asynchronous actions.
+- [React-Native-Rename](https://github.com/junedomingo/react-native-rename): use to rename your project if you clone this template. 
+- [React-Native-Localization](https://github.com/stefalda/ReactNativeLocalization): use for multiple language in your app.
+- [React-Native-iPhoneX-helper](https://github.com/ptelad/react-native-iphone-x-helper): I used to use it to help me with problem in iPhone and android devices.
+- [React-Native-Config](https://github.com/luggit/react-native-config): for configuration environments in your application.
+- [Why-Did-You-Render](https://github.com/welldone-software/why-did-you-render): an amazing library comes from Welldone Software. It's help me a lot to prevent unnecessary re-render in my application. 
 - [Jest](https://facebook.github.io/jest/): for testing.
 
 ## Usage
-### Option 1: create project with template
-Step 1: init project
-```bash
-$ npx react-native init YourProjectName --template react-native-template-ts
-```
-Step 2: install all dependencies:
-```bash
-$ yarn install
-```
-or
-```bash
-$ npm install
-```
-### Option 2: create project by clone
 Step 1: clone project from git
 ```bash
-$ git clone https://github.com/hieuvh301195/react-native-ts-template.git
+$ git clone https://github.com/hieuvh3011/react-native-template.git
 ```
 or you can clone by SSH:
 ```bash
-$ git clone git@github.com:hieuvh301195/react-native-ts-template.git
+$ git clone git@github.com:hieuvh3011/react-native-template.git
 ```
 Step 2: install all dependencies:
 ```bash
@@ -49,6 +41,11 @@ Step 3: rename project
 ```bash
 $ npx react-native-rename YourProjectName
 ```
+For now, I can not publish option 2 yet. I want to create it as a template, so you guys could run 
+```bash
+$ npx react-native init YourProjectName --template hieuvh3011/react-native-template
+```
+and it will create a project for you with my template. But at this moment, I don't know how to do that, to be honest. So, option 2 with a much more easier way will come to you in the future (perhaps). 
 
 ## Folder structure
 As I mentioned above, this template is inspire by js template *react-native-template*. Hence, it follows project structure similar to *react-native-template* (and similar to almost all of react native project that I have ever seen):
