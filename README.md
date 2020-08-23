@@ -58,13 +58,14 @@ As I mentioned above, this template is inspire by js template *react-native-temp
   - `components`: Components folder contains all your application components.
     - `commons`: Folder to store any common component that you use through your app (such as a generic button, text fields, etc).
     - `MyComponent`: Each component should be stored inside it's own folder. Some of developers would like to split styles.js to a file. But for me, I am much more prefer with styling inside of component. Structure inside of this folder is completely depend on you. For me, I use this:
-      - `MyComponent.tsx`: is a file code for main UI on screen.
-      - `SomeSmallComponent.tsx`: is a file code for some small component in `MyComponent` screen. I split it so it make `MyComponent.tsx` shorter and easy to read.
-      - `MyComponentViewModel.tsx`: This file control all of local states, navigation, logics, etc in `MyComponent`. It use **React Hook** to split UI and logic. You can read it at [here](https://medium.com/@sairysss/react-separating-responsibilities-using-hooks-b9c90dbb3ab9). If you are using Class instead of Hook, feel free to add [Recompose](https://github.com/acdlite/recompose) for similar function.
-  - `helpers`: Folder to store any kind of helper that you have, such as Themes, Colors, Dimensions, etc.
-  - `reducers`: This folder should have all your reducers, and expose the combined result using its `index.js`
+      - `MyComponent.js`: is a file code for main UI on screen.
+      - `SomeSmallComponent.js`: is a file code for some small component in `MyComponent` screen. I split it so it make `MyComponent.js` shorter and easy to read.
+      - `MyComponentViewModel.js`: This file control all of local states, navigation, logics, etc in `MyComponent`. It use **React Hook** to split UI and logic. You can read it at [here](https://medium.com/@sairysss/react-separating-responsibilities-using-hooks-b9c90dbb3ab9). If you are using Class instead of Hook, feel free to add [Recompose](https://github.com/acdlite/recompose) for similar function.
+  - `utils`: Folder to store any kind of helper that you have, such as Themes, Colors, Dimensions, etc.
+  - `reducers`: This folder should have all your reducers, and expose the combined result using its `index.js`.
   - `store`: use to create store for all of global states in your application.
   - `api`: Folder to store all your network activities.
   - `business_logic`: Folder to store all your business logic (if it has).
+  - `route`: folder that contain all of navigation in your application.
 - `App.js`: Main component that starts your whole app.
 - `index.js`: Entry point of your application as per React-Native standards.

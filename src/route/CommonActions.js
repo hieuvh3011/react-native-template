@@ -1,3 +1,9 @@
+/**
+ * This is a file use to write your own navigation without navigation props.
+ * You could see the details here: 
+ * https://reactnavigation.org/docs/navigating-without-navigation-prop
+ */
+
 import {navigationRef} from '@react-navigation/native'; 
 
 export function navigate(name, params) {
