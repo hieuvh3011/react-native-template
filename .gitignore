@@ -60,6 +60,12 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 
+#VsCode
+.vscode
+
+#IDEA
+.idea
+
 # environment variables
 .env
 .env.production
