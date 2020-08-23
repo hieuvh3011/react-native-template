@@ -10,7 +10,7 @@ import strings from '../localization/Localization';
 const Tabs = createBottomTabNavigator();
 
 export default BottomTabNavigator = () => (
-  <Tabs.Navigator>
+  <Tabs.Navigator backBehavior={"none"}>
     <Tabs.Screen
       component={HomeScreen}
       options={() => ({

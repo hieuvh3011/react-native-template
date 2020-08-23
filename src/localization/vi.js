@@ -1,18 +1,21 @@
 export default {
-  connectionError: 'Lỗi kết nối',
   email: 'Email',
-  emailHint: 'Nhập email',
+  email_hint: 'Nhập email',
   home: 'Trang chủ',
-  homeMessage: 'Chào mừng',
+  home_message: 'Chào mừng',
   account: 'Tài khoản',
   loading: 'Đang tải',
   login: 'Đăng nhập',
   logout: 'Đăng xuất',
   password: 'Mật khẩu',
-  passwordHint: 'Nhập mật khẩu',
+  password_hint: 'Nhập mật khẩu',
   profile: 'Hồ sơ',
-  profileMessage:
-    'And this one has a nav, but with a different color than the login.',
   notification: "Thông báo",
-  settings: "Cài đặt"
+  settings: "Cài đặt",
+  network_error: {
+    connection: "Lỗi kết nối tới máy chủ, vui lòng thử lại sau!",
+    no_connection: "Không có mạng internet. Vui lòng kiểm tra lại internet của thiết bị và thử lại.",
+    undefined: "Đã xảy ra lỗi không xác định, vui lòng thử lại sau!",
+    server_taking_too_long_too_response: "Máy chủ mất quá nhiều thời gian để phản hồi. Vui lòng thử lại"
+  },
 };

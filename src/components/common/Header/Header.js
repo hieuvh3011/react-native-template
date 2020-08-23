@@ -12,8 +12,8 @@ import  headerViewModel  from '../../common/Header/HeaderViewModel';
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import texts from '../../../utils/TextStyles';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
-const { width, height } = Dimensions.get('window');
 const headerHeight = scaleVertical(50);
 
 export function Header(props) {
@@ -66,8 +66,8 @@ export function Header(props) {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    height: headerHeight + StatusBar.currentHeight,
-    paddingTop: StatusBar.currentHeight,
+    height: headerHeight + getStatusBarHeight(),
+    paddingTop: getStatusBarHeight(),
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',

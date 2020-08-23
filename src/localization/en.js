@@ -1,18 +1,22 @@
 export default {
-  connectionError: 'Connection error',
   email: 'Email',
-  emailHint: 'Enter your email',
+  email_hint: 'Enter your email',
   home: 'Home',
-  homeMessage: 'Welcome',
+  home_message: 'Welcome',
   account: 'Account',
   loading: 'Loading',
   login: 'Login',
   logout: 'Logout',
   password: 'Password',
-  passwordHint: 'Enter your password',
+  password_hint: 'Enter your password',
   profile: 'Profile',
-  profileMessage:
-    'And this one has a nav, but with a different color than the login.',
   notification: "Notification",
-  settings: "Settings"
+  settings: "Settings",
+  network_error: {
+    connection: "Connection error. Please try again later!",
+    no_connection: "No internet connection. Please check your internet connection and try again.",
+    undefined: "There is some undefined error happened, please try again later!",
+    server_taking_too_long_too_response: "Server taking too long to response. Please try again."
+  },
+
 };

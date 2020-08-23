@@ -17,7 +17,10 @@ export default function AccountScreen(props) {
   return (
     <View style={styles.container}>
       <Header title={strings.account}/>
-      <Text style={textField}>AccountScreen</Text>
+      <View style={styles.content}>
+        <Text style={textField}>{strings.account}</Text>
+      </View>
+
     </View>
   )
 }
@@ -26,10 +29,14 @@ const styles = StyleSheet.create({
   center:{
     alignItems:'center',
     justifyContent:'center',
-    alignItems:'center'
   },
   container: {
     width,
     height,
+  },
+  content:{
+    flex:1,
+    alignItems:'center',
+    justifyContent:'center'
   }
 });
